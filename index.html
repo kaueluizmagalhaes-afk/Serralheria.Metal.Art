@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serralheria - Catálogo de Serviços</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Fundo Branco */
+            color: #333;
+        }
+
+        header {
+            background-color: #0044cc; /* Azul */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Seção do Vídeo de Anúncio */
+        .video-secao {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .video-secao video {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Galeria de Serviços/Fotos */
+        .galeria-titulo {
+            text-align: center;
+            margin-top: 50px;
+            color: #0044cc;
+        }
+
+        .grid-servicos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card-servico {
+            background: #f9f9f9;
+            border: 2px solid #0044cc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card-servico:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-servico img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Botões e Redes Sociais */
+        .btn-whatsapp {
+            display: block;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        /* Rodapé Azul */
+        footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid white;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .social-links a:hover {
+            background: white;
+            color: #0044cc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Serralheria em Aço e Ferro</h1>
+    <p>Qualidade, resistência e preço justo.</p>
+</header>
+
+<section class="video-secao">
+    <h2>Confira nosso trabalho em vídeo</h2>
+    <video controls poster="capa-do-video.jpg">
+        <source src="seu-video-anuncio.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+</section>
+
+<h2 class="galeria-titulo">Nossos Serviços</h2>
+
+<section class="grid-servicos">
+    
+    <div class="card-servico">
+        <img src="foto-portao.jpg" alt="Portão de Ferro">
+        <div class="card-info">
+            <h3>Portões Basculantes</h3>
+            <p>Fabricação sob medida com pintura eletrostática.</p>
+            <a href="https://wa.me/SEUNUMERO" class="btn-whatsapp">Orçamento via Zap</a>
+        </div>
+    </div>
+
+    <div class="card-servico">
+        <img src="foto-grade.jpg" alt="Grade de Proteção">
+        <div class="card-info">
+            <h3>Grades e Cercas</h3>
+            <p>Segurança reforçada para sua residência ou comércio.</p>
+            <a href="https://wa.me/SEUNUMERO" class="btn-whatsapp">Orçamento via Zap</a>
+        </div>
+    </div>
+
+    <div class="card-servico">
+        <img src="foto-estrutura.jpg" alt="Estrutura Metálica">
+        <div class="card-info">
+            <h3>Estruturas Metálicas</h3>
+            <p>Galpões, mezaninos e coberturas em geral.</p>
+            <a href="https://wa.me/SEUNUMERO" class="btn-whatsapp">Orçamento via Zap</a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div class="social-links">
+        <p>Siga-nos nas redes sociais:</p>
+        <a href="https://instagram.com/seuuser" target="_blank">Instagram</a>
+        <a href="https://facebook.com/seuuser" target="_blank">Facebook</a>
+    </div>
+    <br>
+    <p>&copy; 2026 Serralheria Profissional - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
