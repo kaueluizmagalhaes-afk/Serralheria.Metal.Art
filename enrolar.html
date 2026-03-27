@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelos de Portões - Serralheria Metal Art</title>
+    <title>Galeria - Serralheria Metal Art</title>
 
     <link rel="icon" type="image/png" sizes="512x512" href="fotos/favicon.png">
     <link rel="apple-touch-icon" href="fotos/favicon.png">
 
     <style>
-        /* ESTILOS DO HEADER E GERAIS */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -23,6 +22,7 @@
             background-color: #0044cc;
             color: white;
             padding: 40px 20px;
+            text-align: center;
         }
 
         header img {
@@ -32,7 +32,6 @@
             margin: 0 auto 15px auto;
             border-radius: 8px;
         }
-
         .voltar {
             display: inline-block;
             margin: 25px 0;
@@ -49,46 +48,6 @@
             background-color: #0044cc;
             color: white;
         }
-        #filtros-portoes {
-            margin: 20px auto 40px auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #filtros-portoes h2 {
-            color: #cc0000;
-            text-transform: uppercase;
-            font-size: 22px;
-            margin-bottom: 20px;
-        }
-
-        .menu-botoes {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .menu-botoes button {
-            background-color: #cc0000;
-            color: white;
-            border: 2px solid #cc0000;
-            padding: 15px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.3s;
-            text-transform: uppercase;
-        }
-
-        .menu-botoes button:hover {
-            background-color: white;
-            color: #cc0000;
-        }
         .galeria-fotos {
             padding: 20px;
             display: grid;
@@ -100,12 +59,11 @@
 
         .galeria-fotos img {
             width: 100%;
-            height: 300px;
-            object-fit: cover;
+            height: 300px; /* Altura fixa para alinhar */
+            object-fit: cover; /* Corta a imagem sem esticar */
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             border: 3px solid #f4f4f4;
-            background-color: #eee;
         }
         .secao-contato {
             margin: 50px 20px;
@@ -133,7 +91,7 @@
             background-color: #1ebe57;
         }
 
-        /* 6. FOOTER */
+        /* 5. FOOTER (IGUAL AO INDEX) */
         footer {
             background-color: #0044cc;
             color: white;
@@ -151,19 +109,15 @@
 
 <a href="index.html" class="voltar">⬅ Voltar ao Início</a>
 
-<section id="filtros-portoes">
-    <h2>Escolha o tipo de portão:</h2>
-    <div class="menu-botoes">
-        <button onclick="location.href='basculante.html'">Basculantes</button>
-        <button onclick="location.href='correr.html'">De Correr</button>
-        <button onclick="location.href='enrolar.html'">De Enrolar (Comercial)</button>
-    </div>
+<section class="galeria-fotos">
+    <img src="fotos/enrolar/enrolar1.jpg" alt="Portão de Enrolar (Comercial) "loading="lazy">
 </section>
 
 <section class="secao-contato">
+    <h3>Gostou de algum desses?</h3>
     <p>Fale direto com a Serralheria Metal Art para um orçamento gratuito!</p>
     <br>
-    <a href="https://wa.me/554196121144?text=Olá!+Vi+as+fotos+no+site+e+quero+um+orçamento!" class="btn-zap-final">
+    <a href="https://wa.me/554196121144?text=Olá!+Vi+as+fotos+no+site+e+quero+um+orçamento+de+um+portão+de+enrolar+(comercial)!" class="btn-zap-final">
         Solicitar Orçamento via WhatsApp
     </a>
 </section>
