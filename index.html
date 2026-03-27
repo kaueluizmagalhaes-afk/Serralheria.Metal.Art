@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serralheria - Catálogo de Serviços</title>
+    <title>Serralheria Metal Art - Pinhais/PR</title>
+
+    <link rel="icon" type="image/png" sizes="512x512" href="fotos/favicon.png">
+    <link rel="apple-touch-icon" href="fotos/favicon.png">
+
     <style>
         /* Estilos Gerais */
         body {
@@ -15,15 +19,29 @@
         }
 
         header {
-            background-color: #0044cc; /* AZUL */
+            background-color: #0044cc; /* AZUL DA LOGO */
             color: white;
             padding: 40px 20px;
             text-align: center;
         }
 
-        /* FILTRO ABAIXO DO HEADER (Aprox. 1.5cm = 55px) */
+        header img {
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        /*  MENU DE SERVIÇOS */
         #servicos {
-            margin-top: 55px; /* O "pulo" de 1,5cm que você pediu */
+            margin-top: 55px; /* Pulo de 1,5cm */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -32,7 +50,7 @@
 
         #servicos h2 {
             margin-bottom: 25px;
-            color: #cc0000; /* VERMELHO no título também */
+            color: #cc0000; /* VERMELHO */
             text-transform: uppercase;
             font-size: 24px;
         }
@@ -45,10 +63,9 @@
             max-width: 450px;
         }
 
-        /* BOTÕES VERMELHOS */
         .menu-botoes button {
-            background-color: #cc0000; /* VERMELHO SERRALHERIA */
-            color: white; /* TEXTO BRANCO */
+            background-color: #cc0000;
+            color: white;
             border: 2px solid #cc0000;
             padding: 20px;
             font-size: 19px;
@@ -62,12 +79,10 @@
 
         .menu-botoes button:hover {
             background-color: #ffffff;
-            color: #cc0000; /* Inverte as cores no hover */
-            border: 2px solid #cc0000;
+            color: #cc0000;
             transform: translateY(-3px);
         }
 
-        /* SEÇÃO DO VÍDEO (Agora fica abaixo do filtro) */
         .video-secao {
             max-width: 900px;
             margin: 60px auto;
@@ -79,15 +94,46 @@
             width: 100%;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            border: 3px solid #0044cc; /* Moldura azul no vídeo */
+            border: 3px solid #0044cc;
         }
 
+        /* RODAPÉ E REDES SOCIAIS */
         footer {
             background-color: #0044cc;
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
             margin-top: 50px;
+        }
+
+        footer h3 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .btn-whatsapp-footer {
+            background-color: #25d366; /* VERDE */
+            color: white;
+            text-decoration: none;
+            padding: 18px 35px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 20px;
+            display: inline-block;
+            margin-bottom: 35px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .btn-whatsapp-footer:hover {
+            transform: scale(1.05);
+            background-color: #1ebe57;
+        }
+
+        .social-links p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            opacity: 0.9;
         }
 
         .social-links a {
@@ -95,15 +141,30 @@
             margin: 0 10px;
             text-decoration: none;
             border: 1px solid white;
-            padding: 8px 15px;
-            border-radius: 20px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            background-color: white;
+            color: #0044cc;
+        }
+
+        .copyright {
+            margin-top: 30px;
+            font-size: 12px;
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Serralheria em Aço e Ferro</h1>
+    <img src="fotos/logo.png" alt="Metal Art Serralheria">
+    <h1>Serralheria Metal Art</h1>
     <p>Qualidade, resistência e preço justo.</p>
 </header>
 
@@ -118,14 +179,26 @@
 
 <section class="video-secao">
     <h2>Veja como trabalhamos</h2>
-    <video controls poster="capa-do-video.jpg">
-        <source src="seu-video-anuncio.mp4" type="video/mp4">
+    <video controls poster="fotos/capa-do-video.jpg">
+        <source src="videos/video-anuncio.mp4" type="video/mp4">
         Seu navegador não suporta vídeos.
     </video>
 </section>
 
 <footer>
-    <p>&copy; 2026 Serralheria Profissional - Pinhais/PR</p>
+    <h3>Entre em contato conosco</h3>
+    
+    <a href="https://wa.me/554196121144" target="_blank" class="btn-whatsapp-footer">
+        ENTRAR EM CONTATO AGORA
+    </a>
+
+    <div class="social-links">
+        <p>Siga a Metal Art nas redes sociais:</p>
+        <a href="LINK_DO_FACEBOOK" target="_blank">Facebook</a>
+        <a href="LINK_DO_KWAI" target="_blank">Kwai</a>
+    </div>
+
+    <p class="copyright">&copy; 2026 Serralheria Metal Art - Pinhais/PR</p>
 </footer>
 
 </body>
